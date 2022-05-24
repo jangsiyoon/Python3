@@ -2,6 +2,9 @@
 
 ## if문 
 
+from email import message
+
+
 money = 2000
 
 if money >= 3000:
@@ -31,3 +34,37 @@ if money >= 3000 or card:
 else:
     print("걸어가라")
 
+# 2. x in s, x not in s : s에 리스트, 튜플, 문자열 가능
+
+# 예제.
+
+pocket = ['paper', 'cellphone', 'money']
+
+if 'money' in pocket:
+    print("택시를 타고 가라")
+else:
+    print("걸어가라")
+    
+    
+# 3. elif 사용 예제
+
+pocket = ['paper', 'cellphone']
+card = True 
+if 'money' in pocket:
+    print("택시를 타고 가라")
+elif card == True:
+    print("택시를 타고 가라")
+else:
+    print("걸어가라")
+    
+## 조건부 표현식
+
+score = 60
+
+message = "success" if score >= 60 else "failure"
+print(message)
+
+
+
+
+    
